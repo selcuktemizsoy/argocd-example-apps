@@ -9,3 +9,4 @@ spec:
   selector:
     app: guestbook-ui
     t: ui
+    p: u
