@@ -12,3 +12,4 @@ spec:
   selector:
     name: user
     my: op
+    po: o
