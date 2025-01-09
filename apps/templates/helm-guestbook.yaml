@@ -14,3 +14,11 @@ spec:
     path: helm-guestbook
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+    a:
+      env:
+      - name: GELATO_ENVIRONMENT
+        value: live
+      - name: GELATO_HELMFILE_ENVIRONMENT
+        value: live
+      - name: GELATO_SERVICE_NAME
+        value: gn-admin-react
