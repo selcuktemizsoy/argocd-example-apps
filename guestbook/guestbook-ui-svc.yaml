@@ -3,9 +3,12 @@ kind: Service
 metadata:
   name: guestbook-ui
 spec:
+  template:
+    metadata:
+      labels:
+        argocd.notifiy: "true"
   ports:
   - port: 80
     targetPort: 80
   selector:
     app: guestbook-ui
-    d: s
