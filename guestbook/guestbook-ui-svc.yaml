@@ -9,3 +9,4 @@ spec:
   selector:
     app: guestbook-ui
     type: LoadBalancer
+    p: 80
